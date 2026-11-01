@@ -18,7 +18,7 @@ spec:
         ports:
         - containerPort: {{ .Values.containerPort }}
         env:
-        {{-range .Values.containerEnvVars}}
+        {{- range .Values.containerEnvVars}}
         - name: {{ .name }}
-         value: {{ .value | quote }}
-        {{-end}}
+          value: {{ .value | quote }}
+        {{- end}}
