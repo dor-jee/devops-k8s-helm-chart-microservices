@@ -1,0 +1,9 @@
+appName: shippingservice
+appImage: us-central1-docker.pkg.dev/google-samples/microservices-demo/shippingservice
+appVersion: v0.10.5
+appReplicas: 2
+containerPort: 50051
+containerEnvVars:
+  - name: PORT  
+    value: "50051"
+servicePort: 50051
