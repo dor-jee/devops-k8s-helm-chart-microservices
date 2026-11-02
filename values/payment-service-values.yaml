@@ -4,8 +4,8 @@ appVersion: v0.10.5
 appReplicas: 2
 containerPort: 50051
 containerEnvVars:
-- name: PORT
-  value: "50051"
-- name: DISABLE_PROFILER
-  value: "1"
+  - name: PORT  
+    value: "50051"
+  - name: DISABLE_PROFILER
+    value: "1"
 servicePort: 50051
